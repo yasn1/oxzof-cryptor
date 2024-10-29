@@ -12,7 +12,7 @@ You need to use your one-time sentence and key to get tokens.
 
 ## Require Command
 ```javascript
-const Encryptor = require("oxzof-cryport");
+const Encryptor = require("oxzof-cryptor");
 const crypt = new Encryptor();
 ```
 
