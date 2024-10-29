@@ -13,7 +13,7 @@ You need to use your one-time sentence and key to get tokens.
 ## Require Command
 ```javascript
 const Encryptor = require("oxzof-cryptor");
-const crypt = new Encryptor();
+const encrypt = new Encryptor();
 ```
 
 ## Encode Function
@@ -23,7 +23,7 @@ const crypt = new Encryptor();
         text:"This is a secret message!",
         key:"oxzof"
     });
-    console.log(data)
+    console.log(data) // return a token
 })()
 ```
 
@@ -32,9 +32,9 @@ const crypt = new Encryptor();
 ```javascript
 (async()=>{
     let data = await encrypt.decode({
-        token:"token"
+        token:"token" // enter token here
     });
-    console.log(data)
+    console.log(data) // It will ask for a key, if the correct key is used the text will be returned.
 })()
 ```
 
